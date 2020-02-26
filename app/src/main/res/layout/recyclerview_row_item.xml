@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/videoCardView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        app:cardCornerRadius="8dp"
+        android:visibility="gone"
+        app:cardBackgroundColor="#000">
+
+        <VideoView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/videoView"/>
+
+        <Button
+            android:id="@+id/videoDownloadButton"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/btn_bg"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Download"
+            android:textColor="#161515"
+            tools:ignore="HardcodedText" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="#020202">
+
+        <ImageView
+            android:id="@+id/imageViewMedia"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_launcher" />
+
+        <Button
+            android:id="@+id/buttonDownloadImage"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/btn_bg"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Download"
+            android:textColor="#161515"
+            tools:ignore="HardcodedText" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>
