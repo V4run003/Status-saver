@@ -41,7 +41,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.FileHolder>
 
         this.filesList = filesList;
         this.activity = activity;
-        setHasStableIds(false);
+        setHasStableIds(true);
 
     }
 
